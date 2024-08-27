@@ -364,3 +364,406 @@
 ## Assignment: Solve the 5 given problems
 
 </details>
+
+<details>
+<summary> Class 03 (HTML) </summary>
+
+- HTML Tags & Attribute
+- Image
+- Video
+
+    ### **Document Structure**
+    
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    ```
+    
+    - This declares the document type as HTML5 and sets the language of the document to English.
+    - The `<!DOCTYPE html>` declares the document type, telling the browser that this is an HTML5 document.
+    - The `<html>` element is the root element of the HTML document.
+    - The `lang="en"` attribute specifies that the language of the document is English.
+    
+    ### **Head Section**
+    
+    ```html
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Class 03 Practise</title>
+    </head>
+    
+    ```
+    
+    - The `<head>` element contains meta-information about the document, like the character encoding (`<meta charset="UTF-8">`) and the viewport settings (`<meta name="viewport" content="width=device-width, initial-scale=1.0">`), which help make the website responsive.
+    - The `<title>` element sets the title of the webpage, which is displayed on the browser tab. Here, it is "Class 03 Practise."
+    
+    ### Body Section
+    
+    The body section of an HTML document is where all the content that users see on the webpage is placed. It includes text, images, videos, forms, tables, and any other elements that make up the webpage's visual and interactive components. Such as:
+    
+    1. **Lists**:
+        - You can create bullet points using an unordered list (`<ul>`) and numbered items using an ordered list (`<ol>`). For example, you might list hobbies like "Reading" or tasks like "Working."
+    2. **Tables**:
+        - Tables (`<table>`) are used to organize data in rows and columns. You can label each column with headers and fill in data for things like student names and their roll numbers.
+    3. **Forms**:
+        - Forms (`<form>`) are used to collect user input. You can create text fields for usernames and passwords, radio buttons for choosing one option from a list (like HTML or CSS), and checkboxes for selecting multiple options (like hobbies).
+    4. **Text Areas and Dropdowns**:
+        - A text area (`<textarea>`) allows users to enter longer text, like feedback. Dropdown menus (`<select>`) let users choose one option from a list, such as selecting a city from Dhaka, Chittagong, or Barisal.
+    5. **Multimedia**:
+        - You can embed videos using the `<video>` tag or display another webpage within your webpage using an `<iframe>`.
+    6. **Styling and Divisions**:
+        - Divs (`<div>`) are containers that group different elements together. You can style these elements directly in the HTML with inline styles or with a `<style>` tag that controls how the content looks, such as changing the text color.
+    
+    The body section is like the main part of a book, where all the stories, images, and interactive elements are displayed for the reader to experience.
+    
+    ### Lists
+    
+    ```html
+    <ul>
+        <li>Reading</li>
+        <li>Writing</li>
+    </ul>
+    ```
+    
+    - This creates a bulleted list with items "Reading" and "Writing."
+    - **Unordered List (`<ul>`)**: This creates a simple list where each item is marked with a bullet point. In this code, the unordered list contains two items: "Reading" and "Writing." These items are displayed with a small dot (bullet) next to each one, making it easy to see the list of activities.
+    
+    ```html
+    <ol>
+        <li>Traveling</li>
+        <li>Working</li>
+    </ol>
+    ```
+    
+    - This creates a numbered list with items "Traveling" and "Working."
+    - **Ordered List (`<ol>`)**: This creates a list where each item is numbered. In this code, the ordered list contains two items: "Traveling" and "Working." These items are displayed with numbers next to them, like "1. Traveling" and "2. Working," which shows a clear sequence or order for the list.
+    
+    ### **Table**
+    
+    ```html
+    <table>
+        <caption>Student</caption>
+        <thead>
+            <th colspan="2">Data</th>
+        </thead>
+        <thead>
+            <th>Name</th>
+            <th>Roll</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A</td>
+                <td>028</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>029</td>
+            </tr>
+        </tbody>
+    </table>
+    ```
+    
+    - This table displays student information with a caption "Student," headers "Name" and "Roll," and two rows of data.
+    - A table is created with the `<table>` element.
+    - The `<caption>` tag in HTML is used to provide a title or description for a table. This title is usually displayed above the table, giving context to the data within the table.
+    - The first `<thead>` contains a header row that spans two columns (`colspan="2"`) with the title "Data."
+    - The second `<thead>` contains the actual headers "Name" and "Roll."
+    - The `<tbody>` contains the table's body with two rows of data: "A, 028" and "B, 029."
+    
+    ### **Form**
+    
+    In HTML, a `<form>` is used to collect user input. The data from the form can then be sent to a server for processing. A form typically includes elements like text fields, checkboxes, radio buttons, and submit buttons.
+    
+    ### **Basic Structure of a Form:**
+    
+    ```html
+    <form action="/submit-form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+    
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password">
+    
+        <input type="submit" value="Submit">
+    </form>
+    ```
+    
+    - **`<form>` Tag:**
+        - The `<form>` tag creates a form for user input.
+        - **`action`:** The URL where the form data will be sent for processing.
+        - **`method`:** Specifies how to send form data. Common methods are `get` (appends data to the URL) and `post` (sends data as a package in the body of the request).
+    - **`<label>` Tag:**
+        - Labels are linked to form elements via the `for` attribute, which matches the `id` of the input field. This makes the form more accessible, allowing users to click the label to focus on the input field.
+    - **`<input>` Tag:**
+        - The `<input>` tag is used to create various form controls.
+        - **`type="text"`:** Creates a single-line text input.
+        - **`type="email"`:** Creates an input field specifically for email addresses.
+        - **`type="password"`:** Creates a password field that hides the input text.
+        - **`type="submit"`:** Creates a button that submits the form.
+    - **`placeholder`:** Provides a hint to the user about what to enter in the input field.
+    
+    ### **Example of a Complete Form:**
+    
+    ```html
+    <form action="/submit-form" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username">
+    
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age">
+    
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+    
+        <label for="bio">Biography:</label>
+        <textarea id="bio" name="bio" placeholder="Tell us about yourself"></textarea>
+    
+        <input type="submit" value="Register">
+    </form>
+    ```
+    
+    - **`type="number"`:** Creates a field for numeric input.
+    - **`<select>`:** Creates a dropdown menu with options.
+    - **`<textarea>`:** Creates a multi-line text input for longer text, such as a biography.
+    
+    ### Key Points:
+    
+    - **Forms are essential** for collecting user data on websites.
+    - **Different input types** allow for various kinds of user input, making the form versatile.
+    - **Labels and placeholders** improve usability and accessibility by guiding users on what information to enter.
+    
+    Forms are a fundamental part of web development, enabling interaction between users and web applications.
+    
+    ### **Radio Buttons**
+    
+    ```html
+    <form>
+        <input type="radio" id="html" name="fav" value="HTML">
+    		<label for="html">HTML</label>
+    		
+    		<input type="radio" id="css" name="fav" value="CSS">
+    		<label for="css">CSS</label>
+    </form>
+    ```
+    
+    In HTML, a radio button is a form element that allows users to select one option from a set of predefined choices. Radio buttons are useful when you want users to make a single selection from a list.
+    
+    ### Basic Structure of Radio Buttons:
+    
+    - **`<input type="radio">`**: This creates a radio button.
+        - **`name` attribute**: All radio buttons with the same `name` are grouped together. Only one radio button in the group can be selected at a time.
+        - **`value` attribute**: Specifies the value sent to the server when the form is submitted.
+    - **`<label>`**: The `<label>` tag is used to provide a label for the radio button. Clicking the label will select the associated radio button, which improves usability.
+    
+    ### Example:
+    
+    ```html
+    <form>
+        <fieldset>
+            <legend>Choose your favorite fruit:</legend>
+    
+            <label>
+                <input type="radio" name="fruit" value="apple"> Apple
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="fruit" value="banana"> Banana
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="fruit" value="orange"> Orange
+            </label>
+        </fieldset>
+    </form>
+    ```
+    
+    - **`<fieldset>`**: Groups related form elements together. It is often used with `<legend>` to provide a caption for the group.
+    - **`<legend>`**: Provides a heading for the group of radio buttons, making the form more understandable.
+    
+    ### Key Points:
+    
+    - **Single Selection**: Only one radio button from a group can be selected at a time.
+    - **Grouping**: Use the same `name` attribute for all radio buttons in a group to ensure mutual exclusivity.
+    - **Labels**: Always use labels for radio buttons to improve form accessibility and user experience.
+    
+    Radio buttons are commonly used in forms where the user needs to select one option out of several, such as choosing a preference or answering a question with predefined answers.
+    
+    ### **Checkboxes**
+    
+    ```html
+    <input type="checkbox" name="class" id="1" value="Sleeping">
+    <label for="1">Sleeping</label>
+    <br>
+    <input type="checkbox" name="class" id="2" value="Working">
+    <label for="2">Working</label>
+    <br>
+    <input type="checkbox" name="class" id="3" value="Traveling">
+    <label for="3">Traveling</label>
+    ```
+    
+    - The `<input type="checkbox">` elements allow users to select multiple options from a list, which includes "Sleeping," "Working," and "Traveling." (Note: IDs should be unique.)
+    
+    ### **Textarea**
+    
+    ```html
+    <label for="10">Feedback</label>
+    <br>
+    <textarea name="feedback" id="10" placeholder="enter your feedback" rows="5"></textarea
+    ```
+    
+    - A `<textarea>` element is provided for users to enter feedback. The placeholder text says "enter your feedback," and the area has a specified number of rows.
+    
+    ### **Dropdown Menu**
+    
+    ```html
+    <label for="11">City</label>
+    <select name="city" id="11">
+        <option value="Dhaka">Dhaka</option>
+        <option value="Chittagong">Chittagong</option>
+        <option value="Barishal">Barishal</option>
+    </select>
+    ```
+    
+    - The `<select>` element creates a dropdown menu for selecting a city. The options provided are "Dhaka," "Chittagong," and "Barishal."
+    
+    ### **Iframe**
+    
+    ```html
+    <iframe src="https://www.wikipedia.org/" frameborder="0"></iframe>
+    ```
+    
+    - The `<iframe>` element is used to embed another webpage (in this case, Wikipedia) within the current page.
+    
+    ### **Video**
+    
+    ```html
+    <video src="0824.mp4" height="100px" controls="autoplay">My Video</video>
+    ```
+    
+    This video element embeds a video ("0824.mp4") with a height of 100px and controls for play/pause. The `autoplay` attribute automatically starts the video.
+    
+    In HTML, the `<video>` tag is used to embed video content directly into a webpage. It allows users to view videos without needing additional plugins or software. The `<video>` tag provides built-in controls for playing, pausing, and adjusting the volume of the video.
+    
+    ### Basic Structure of the `<video>` Tag:
+    
+    ```html
+    <video src="video.mp4" controls>
+        Your browser does not support the video tag.
+    </video>
+    ```
+    
+    - **`<video>` Tag**: This tag is used to embed video content.
+        - **`src` attribute**: Specifies the path to the video file. In this example, it’s `"video.mp4"`.
+        - **`controls` attribute**: Adds play, pause, and volume controls to the video player. Without this attribute, the video will play automatically without user controls.
+    - **Fallback Content**: The text "Your browser does not support the video tag." is displayed if the browser cannot play the video. This provides a fallback message for users with older browsers.
+    
+    ### Additional Attributes:
+    
+    - **`autoplay`**: Makes the video start playing automatically when the page loads.
+        
+        ```html
+        htmlCopy code
+        <video src="video.mp4" controls autoplay>
+        
+        ```
+        
+    - **`loop`**: Makes the video restart automatically after it finishes.
+        
+        ```html
+        htmlCopy code
+        <video src="video.mp4" controls loop>
+        
+        ```
+        
+    - **`muted`**: Mutes the audio of the video.
+        
+        ```html
+        htmlCopy code
+        <video src="video.mp4" controls muted>
+        
+        ```
+        
+    - **`poster`**: Specifies an image to show while the video is downloading or before the video starts playing.
+        
+        ```html
+        htmlCopy code
+        <video src="video.mp4" controls poster="thumbnail.jpg">
+        ```
+        
+    
+    ### Key Points:
+    
+    - **Formats**: Common video formats include MP4, WebM, and Ogg. MP4 is widely supported across modern browsers.
+    - **Controls**: The `controls` attribute provides basic video player controls.
+    - **Attributes**: Customize video behaviour with attributes like `autoplay`, `loop`, and `muted`.
+    
+    ### **Preformatted Text (`<pre>`)**
+    
+    ```html
+    <pre>
+    <div class="class" style="color: red">
+        I am a Bangladeshi
+        <p id="1" style="color: green">I am a Bangladeshi</p>
+        <p>I am a Bangladeshi</p>
+    </div>
+    </pre>
+    ```
+    
+    - The `<pre>` tag preserves whitespace and line breaks. Inside it, a `<div>` is styled with inline CSS to display text in red, with one paragraph in green.
+    - The `<pre>` element is used to display text with preserved whitespace and line breaks.
+    
+    ### **Div Elements and Inline Styling**
+    
+    ```html
+    <div class="class">
+        <p id="one">Hello World</p>
+        <p id="two">Hello World</p>
+        <p id="three">Hello World</p>
+        <style>
+            .class {
+                color: red;
+            }
+            #one {
+                color: blue;
+            }
+            #three {
+                color: violet;
+            }
+        </style>
+    </div>
+    ```
+    
+    - The `<div>` elements are containers used to group together HTML elements. Inline CSS styles (e.g., `style="color: red"`) are used to add specific styling to elements.
+    - The second `<div>` includes a style block `<style>` that defines specific styles for elements with the `class` and `id` attributes.
+    - Within the `<style>` tag, CSS is used to define the color of text for different classes and IDs. For example, the class `class` turns the text red, and the ID `one` changes the text color to blue.
+    
+    ### **Paragraphs**
+    
+    - The `<p>` elements are used to define paragraphs of text, with each paragraph being a separate block of content.
+    
+    ### Class Summary
+    
+    - **Lists**
+    - **Table**
+    - **Form**
+    - **Radio Buttons**
+    - **Checkboxes**
+    - **Textarea**
+    - **Dropdown Menu**
+    - **Iframe**
+    - **Video**
+    - **Div & CSS Styles**
+    
+    ### Class Task:
+    
+    - [x]  Assignment 02
+
+</details>
