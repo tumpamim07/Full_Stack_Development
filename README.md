@@ -368,6 +368,7 @@
 <details>
 <summary> Class 03 (HTML) </summary>
 
+## Class 03 Topics:
 - HTML Tags & Attribute
 - Image
 - Video
