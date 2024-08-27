@@ -671,7 +671,6 @@
     - **`autoplay`**: Makes the video start playing automatically when the page loads.
         
         ```html
-        htmlCopy code
         <video src="video.mp4" controls autoplay>
         
         ```
@@ -679,7 +678,6 @@
     - **`loop`**: Makes the video restart automatically after it finishes.
         
         ```html
-        htmlCopy code
         <video src="video.mp4" controls loop>
         
         ```
@@ -687,7 +685,6 @@
     - **`muted`**: Mutes the audio of the video.
         
         ```html
-        htmlCopy code
         <video src="video.mp4" controls muted>
         
         ```
@@ -695,7 +692,6 @@
     - **`poster`**: Specifies an image to show while the video is downloading or before the video starts playing.
         
         ```html
-        htmlCopy code
         <video src="video.mp4" controls poster="thumbnail.jpg">
         ```
         
