@@ -1,0 +1,64 @@
+h1{
+    color: steelblue;
+}
+h2{
+    color: blueviolet;
+}
+h3{
+    color: red;
+}
+h4{
+    color: royalblue;
+}
+
+body{
+    background-color: lightcyan;
+}
+button{
+    color: brown;
+    background-color: rgb(235, 250, 150);
+}
+
+/* all */
+
+/* 
+
+*{
+    color: violet;
+} */
+
+/* id */
+
+#one{
+    color: blue;
+}
+#two{
+    color: red;
+}
+
+/* class */
+.one{
+    color: darkcyan;
+}
+
+p{
+    text-align: right;
+
+}
+
+h1{
+    text-align: center;
+    text-decoration: line-through;
+    text-decoration: underline;
+    text-decoration: overline;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 80px;
+}
+
+img{
+    height: 200px;
+}

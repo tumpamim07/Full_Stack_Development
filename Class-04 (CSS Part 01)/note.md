@@ -1,0 +1,2 @@
+what is css?
+selector(universal selector, element selector, class selector), property, value, including style(inline, style tag, external stylesheet), color property,color system(rgb, hex, ), text alignment,text decoration(underline,inline,line through), font weight(normal,bold,bolder,lighter, 100-900), font family, units in css,  
