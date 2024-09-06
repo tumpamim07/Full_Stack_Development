@@ -764,3 +764,253 @@
     - [x]  Assignment 02
 
 </details>
+
+<details>
+<summary>Class 04 (CSS)</summary>
+
+    
+## Class 04 Topics:
+
+- CSS
+- Selectors
+- Property and Value
+- Ways to Add Styles
+- Color Property
+- Color Systems
+- Text Alignment
+- Text Decoration
+- Font Weight
+- Font Family
+- Units in CSS
+    
+    ### CSS (Cascading Style Sheets)
+    
+    CSS is a style sheet language used to define how HTML elements (like text, buttons, and layouts) should look on a web page. It allows you to control the appearance of your site including colors, fonts, layouts, spacing, and more.
+    
+    ### Selector
+    
+    Selectors are used in CSS to target HTML elements so you can apply styles to them.
+    
+    1. **Universal Selector (``)**: Targets all HTML elements on the page.
+        - Example:
+            
+            ```css
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            ```
+            
+    2. **Element Selector**: Targets all elements of a specific type.
+        - Example:
+        (This will make all `<p>` elements blue.)
+            
+            ```css
+            p {
+                color: blue;
+            }
+            
+            ```
+            
+    3. **Class Selector (`.classname`)**: Targets elements with a specific class name.
+        - Example:
+            
+            ```css
+            .button {
+                background-color: green;
+            }
+            
+            ```
+            
+    4. **ID Selector (`#idname`)**: Targets an element with a specific ID.
+        - Example:
+            
+            ```css
+            #header {
+                text-align: center;
+            }
+            
+            ```
+            
+    
+    ### Property and Value
+    
+    - **Property**: What you want to style (like `color`, `font-size`, `margin`, etc.).
+    - **Value**: How you want to style it (like `red`, `16px`, `10px`, etc.).
+    
+    Example:
+    
+    ```css
+    p {
+        color: red; /* Property is color, value is red */
+        font-size: 16px; /* Property is font-size, value is 16px */
+    }
+    
+    ```
+    
+    ### Ways to Include CSS
+    
+    1. **Inline Style**: Adding styles directly inside an HTML tag using the `style` attribute.
+        - Example:
+            
+            ```html
+            <p style="color: red;">This is red text.</p>
+            
+            ```
+            
+    2. **Style Tag**: Adding CSS inside a `<style>` tag within the HTML file.
+        - Example:
+            
+            ```html
+            <style>
+                p {
+                    color: blue;
+                }
+            </style>
+            
+            ```
+            
+    3. **External Stylesheet**: Creating a separate CSS file and linking it to your HTML file.
+        - Example (in HTML):
+            
+            ```html
+            <link rel="stylesheet" href="styles.css">
+            
+            ```
+            
+    
+    ### Color Property
+    
+    The `color` property in CSS is used to change the text color.
+    
+    - Example:
+        
+        ```css
+        h1 {
+            color: blue;
+        }
+        
+        ```
+        
+    
+    ### Color System
+    
+    1. **RGB (Red, Green, Blue)**: Colors are defined by how much red, green, and blue they have.
+        - Example:
+            
+            ```css
+            p {
+                color: rgb(255, 0, 0); /* Pure red */
+            }
+            
+            ```
+            
+    2. **HEX (Hexadecimal)**: A 6-digit code that represents color.
+        - Example:
+            
+            ```css
+            p {
+                color: #ff0000; /* Also pure red */
+            }
+            
+            ```
+            
+    
+    ### Text Alignment
+    
+    The `text-align` property is used to set the horizontal alignment of text.
+    
+    - **Values**:
+        - `left` (default)
+        - `center`
+        - `right`
+    
+    Example:
+    
+    ```css
+    h1 {
+        text-align: center;
+    }
+    
+    ```
+    
+    ### Text Decoration
+    
+    The `text-decoration` property adds lines to the text.
+    
+    - **Values**:
+        - `underline`: Adds an underline.
+        - `line-through`: Adds a line through the middle (used for strikethrough).
+        - `none`: Removes any decoration.
+    
+    Example:
+    
+    ```css
+    p {
+        text-decoration: underline;
+    }
+    
+    ```
+    
+    ### Font Weight
+    
+    The `font-weight` property controls the thickness of the text.
+    
+    - **Values**:
+        - `normal`: Regular weight.
+        - `bold`: Bold text.
+        - `bolder`: Bolder than bold.
+        - `lighter`: Lighter than normal.
+        - Numerical values from `100` (lightest) to `900` (boldest).
+    
+    Example:
+    
+    ```css
+    h2 {
+        font-weight: bold;
+    }
+    
+    ```
+    
+    ### Font Family
+    
+    The `font-family` property defines the type of font to use.
+    
+    - Example:
+        
+        ```css
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        ```
+        
+    
+    You can list multiple fonts as a fallback in case one isn’t available.
+    
+    ### Units in CSS
+    
+    CSS uses different units to measure things like size and spacing.
+    
+    - **px (pixels)**: Fixed size.
+        - Example: `font-size: 16px;`
+    - **% (percentage)**: Relative to the parent element's size.
+        - Example: `width: 50%;`
+    - **em**: Relative to the parent element's font size.
+        - Example: `padding: 2em;`
+    - **rem**: Relative to the root element's font size.
+        - Example: `font-size: 1.5rem;`
+    
+    ### Summary
+    
+    - CSS is used to style web pages.
+    - **Selectors** target HTML elements to apply styles.
+    - **Properties and values** define what and how to style elements.
+    - You can add CSS in different ways (inline, style tag, or external stylesheet).
+    - There are different systems for colors, and units to define sizes.
+    
+    ### Class Task
+    
+    - [x]  Practice Set
+
+</details>
