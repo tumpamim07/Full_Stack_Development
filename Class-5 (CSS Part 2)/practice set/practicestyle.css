@@ -1,0 +1,73 @@
+/* div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+} */
+/* 
+head{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    display: flex;
+}
+
+.class
+    background-color: rgb(94, 70, 40);
+    border-color: white;
+    border-style: ridge;
+    border-width: 5px; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+.class ul{
+    list-style: none;
+}
+
+.class ul li{
+    text-decoration: none;
+    color: white;
+    float: left;
+    margin: 10px;
+    line-height: 5px;
+    margin-right: 100px;
+
+}
+
+button{
+    color: white;
+    background-color: orange;
+    border: none;
+} */
+
+head{
+    display: flex;
+    
+}
+.class{
+    background-color: rgb(129, 98, 58);
+    border: 5px;
+    border-color: white;
+    border-style: ridge;
+}
+
+.class ul{
+    list-style: none;
+}
+
+.class ul li{
+    color: white;
+    float: left;
+    margin-right: 150px;
+    text-decoration: none;
+    margin-left: -30px;
+}
+
+button{
+    background-color: orange;
+    border: none;
+    color: white;
+}
