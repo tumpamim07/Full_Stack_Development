@@ -1,0 +1,53 @@
+/* p{
+    line-height: normal;
+    text-transform: capitalize;
+} */
+
+
+div{
+    height: 100px;
+    background-color: pink;
+    width: 100px;
+    border-style: ridge;
+    border-color: rgb(52, 211, 239);
+    border-width: 2px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* #oone{
+
+    display: none;
+    visibility: hidden;
+} */
+
+h1{
+    height: 50px;
+    background-color: rgb(189, 209, 251);
+    width: 100px;
+    /* border-style: dashed;
+    border-width: 5px;
+    border-color: yellowgreen; */
+    /* border: 2px green dashed;
+    border-radius: 5px;
+    padding: 2px 3px 4px 5px ; */
+}
+
+#one{
+    background-color: rgba(225, 112, 112,0.3);
+}
+
+#two{
+    background-color: rgba(225, 112, 112,0.5);
+}
+
+#three{
+    background-color: rgba(225, 112, 112,0.7);
+}
+
+#four{
+    background-color: rgba(225, 112, 112,0.9);
+}
