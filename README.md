@@ -1014,3 +1014,243 @@
     - [x]  Practice Set
 
 </details>
+<details>
+<summary>Class 05(CSS)</summary>
+
+## Class 05 Topics:
+
+- CSS
+- Line Height
+- Text Transform
+- Box Model
+- Padding
+- Border
+- Margin
+- Display
+
+    ### 1. **Line Height**
+    
+    The `line-height` property controls the vertical space between lines of text. We use this property to improve readability by adjusting the spacing between lines, especially in paragraphs or headings. If the lines are too close together, the text can be difficult to read, so adjusting the line height helps make it clearer.
+    
+    ```css
+    p {
+      line-height: 1.5; /* Line height is 1.5 times the font size */
+    }
+    
+    ```
+    
+    ---
+    
+    ### 2. **Text Transform**
+    
+    The `text-transform` property is used to change the case of text. We use it to ensure consistency in text presentation without changing the actual text content
+    
+    ```css
+    h1 {
+      text-transform: uppercase; /* All letters will be uppercase */
+    }
+    
+    p {
+      text-transform: lowercase; /* All letters will be lowercase */
+    }
+    
+    h2 {
+      text-transform: capitalize; /* First letter of each word will be capitalized */
+    }
+    
+    span {
+      text-transform: none; /* No transformation, keeps the original case */
+    }
+    ```
+    
+    - `uppercase` is useful for titles or headlines.
+    - `lowercase` ensures all text is in small letters.
+    - `capitalize` makes the first letter of each word capitalized, which is great for names or headings.
+    - `none` keeps the text in its original form, allowing control over where transformations happen.
+    
+    ---
+    
+    ### 3. **Box Model (Height, Width, Padding, Margin, Border)**
+    
+    The box model includes the element's width, height, padding, border, and margin.
+    
+    ```css
+    div {
+      height: 200px; /* Sets the height of the box */
+      width: 300px;  /* Sets the width of the box */
+      padding: 10px; /* Space inside the box between content and border */
+      margin: 20px;  /* Space outside the box */
+      border: 2px solid black; /* Border around the box */
+    }
+    
+    ```
+    
+    The **box model** is one of the core concepts in CSS. Every element on a webpage is treated as a box. We use the box model to define:
+    
+    - `height` and `width` to control the size of an element.
+    - `padding` to add space inside the element, between the content and the border.
+    - `margin` to create space outside the element, separating it from other elements.
+    - `border` to define a visible boundary around the element.
+    
+    This helps us structure content and design the layout effectively.
+    
+    ---
+    
+    ### 4. **Border (Width, Color, Style)**
+    
+    The `border` property allows us to create visual boundaries around elements. 
+    
+    ```css
+    div {
+      border-width: 5px; /* Width of the border */
+      border-color: red;  /* Color of the border */
+      border-style: solid; /* Style can be solid, dotted, dashed, etc. */
+    }
+    ```
+    
+    - `border-width`, we can make the border thicker or thinner.
+    - `border-color`, we can highlight or differentiate sections.
+    - `border-style`, we define the appearance, such as solid, dashed, or dotted.
+    
+    Borders help visually separate content, emphasize elements, or improve aesthetics.
+    
+    ---
+    
+    ### 5. **Border Shorthand**
+    
+    The shorthand property `border` is used to combine all border-related properties into a single line of code. This makes our CSS cleaner and easier to read. Instead of writing separate lines for width, style, and color, we use the shorthand to define them all at once.
+    
+    ```css
+    div {
+      border: 3px dashed blue; /* Shorthand for border-width, border-style, and border-color */
+    }
+    ```
+    
+    ---
+    
+    ### 6. **Border Radius**
+    
+    We use `border-radius` to create rounded corners for elements, adding a softer look to buttons, boxes, or images. It helps to make the design more visually appealing, avoiding sharp corners and giving the element a modern and smooth appearance.
+    
+    ```css
+    div {
+      border: 2px solid black;
+      border-radius: 10px; /* Rounds the corners */
+    }
+    
+    ```
+    
+    ---
+    
+    ### 7. **Padding (Left, Right, Top, Bottom, Shorthand)**
+    
+    Padding controls the space inside the element, between the content and the border.
+    
+    ```css
+    div {
+      padding-top: 20px;    /* Space above the content */
+      padding-right: 15px;  /* Space on the right */
+      padding-bottom: 10px; /* Space below the content */
+      padding-left: 5px;    /* Space on the left */
+    }
+    
+    /* Shorthand */
+    div {
+      padding: 20px 15px 10px 5px; /* Top, Right, Bottom, Left */
+    }
+    
+    ```
+    
+    We use padding to:
+    
+    - Ensure the text or content inside an element doesn’t touch the edges, making it more comfortable to read.
+    - Add space between the content and the border for design purposes.
+    Padding is important to improve both readability and layout.
+    
+    ---
+    
+    ### 8. **Margin (Left, Right, Bottom, Top, Shorthand)**
+    
+    Margins create space outside the element, between the element and its surrounding.
+    
+    ```css
+    div {
+      margin-top: 20px;    /* Space above the element */
+      margin-right: 15px;  /* Space on the right */
+      margin-bottom: 10px; /* Space below the element */
+      margin-left: 5px;    /* Space on the left */
+    }
+    
+    /* Shorthand */
+    div {
+      margin: 20px 15px 10px 5px; /* Top, Right, Bottom, Left */
+    }
+    
+    ```
+    
+    The `margin` property controls the space outside the element. We use it to create separation between different elements, ensuring they don’t overlap or sit too close together. Proper use of margins helps with overall page layout and makes the content look organized.
+    
+    ---
+    
+    ### 9. **Display (inline, block, inline-block, none)**
+    
+    The `display` property defines how an element is displayed.
+    
+    ```css
+    span {
+      display: inline; /* The element will be inline with other elements */
+    }
+    
+    div {
+      display: block;  /* The element takes up the full width, starting on a new line */
+    }
+    
+    img {
+      display: inline-block; /* Behaves like inline but can have width and height */
+    }
+    
+    p {
+      display: none; /* The element is hidden, and it doesn't take up space */
+    }
+    
+    ```
+    
+    The `display` property determines how an element behaves in relation to other elements.
+    
+    - `inline` makes elements flow alongside other elements without starting a new line (e.g., a link within a paragraph).
+    - `block` elements take up the full width and start on a new line (e.g., paragraphs or divs).
+    - `inline-block` combines both, allowing the element to behave like inline elements but also control its width and height.
+    - `none` hides the element entirely from the page without taking up any space.
+    
+    We use `display` to control how elements are positioned in the document layout.
+    
+    ---
+    
+    ### 10. **Visibility (hidden)**
+    
+    The `visibility` property hides an element, but it still takes up space.
+    
+    ```css
+    p {
+      visibility: hidden; /* The element is invisible, but the space is still occupied */
+    }
+    
+    ```
+    
+    The `visibility` property hides an element without removing the space it occupies. We use this when we want an element to remain in its place (for layout purposes) but not be visible to users. This can be useful for animations or toggling elements on and off without affecting the structure of the page.
+    
+    ---
+    
+    ### 11. **Alpha Channel (rgba)**
+    
+    The `rgba` function defines colors with a red, green, blue, and alpha (opacity) value.
+    
+    ```css
+    div {
+      background-color: rgba(255, 0, 0, 0.5); /* Red color with 50% opacity */
+    }
+    
+    ```
+    
+    The `rgba` color model adds an alpha channel to the standard RGB (Red, Green, Blue) colors, allowing us to control the opacity of the color. We use this to create semi-transparent colors, which can be useful for overlays, backgrounds, or highlights, without fully covering the content beneath.
+</details>
