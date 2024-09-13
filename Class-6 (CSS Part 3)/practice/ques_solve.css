@@ -1,0 +1,104 @@
+div{
+    height: 50px;
+    width: 100%;
+}
+h3{
+    text-align: center;
+}
+
+.class{
+    background-color: orange;
+    border: 2px solid rebeccapurple;
+    margin-right: 20px;
+}
+
+.class ul li{
+    list-style: none;
+    display: inline-flex;
+    margin-right: 40px;
+}
+
+.box{
+    display: flex;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+    
+}
+
+#box1{
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    background-color: rgb(167, 155, 170)
+}
+
+#box2{
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    background-color: rgb(167, 155, 170)}
+
+#box3{
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    background-color: rgb(167, 155, 170)
+}
+
+#box4{
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    background-color: rgb(167, 155, 170)}
+
+.box2{
+    display: flex;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+    bottom: 23px;
+}
+
+#box5{
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    background-image: url(1.png);
+    background-size: cover;
+}
+
+#box6{
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    background-image: url(2.png);
+    background-size: cover;
+}
+
+#box7{
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    background-image: url(3.png);
+    background-size: cover;
+}
+
+#box8{
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    background-image: url(4.png);
+    background-size: cover;
+}
+
